@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;700;800&family=Nerko+One&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+   color: white;
+    /* overflow: hidden; */
+
+
+}
+header,footer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nerko One', cursive;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    
+
+}
+
+header h1{
+    font-size: 5rem;
+}
+
+.b{
+
+    position: absolute;
+}
+.bear{
+
+    left: 100px;
+    bottom: -200px;
+    width: 400px;
+    cursor: pointer;
+    /* z-index: 3; */
+
+}
+
+h1:hover{
+
+  transform: scale(2);
+
+padding: 20px;
+
+}
+
+
+.bear2{
+
+    right: 10px;
+    bottom: 0px;
+    width: 400px;
+    transform: rotate(270deg);
+}
+
+.bear3{
+
+    left: 10px;
+    bottom: 0px;
+    width: 400px;
+
+}
+
+footer h2{
+    font-size: 5rem;
+
+}
+
+.animation{
+    height: 100vh;
+    background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    position: relative;
+    overflow: hidden;
+}
+
+.p{
+    height: 150px;
+    position: absolute;
+   
+}
+
+.paper{
+    top: 20%;
+    left: 0;
+}
+.paper2{
+    top: 20%;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+footer{
+position: relative;
+}
