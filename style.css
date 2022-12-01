@@ -1,101 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;700;800&family=Nerko+One&family=Roboto:wght@300;400;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;700;800&family=Nerko+One&family=Roboto:wght@300;400;700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-   color: white;
-    /* overflow: hidden; */
-
-
+body {
+  color: white;
+  /* overflow: hidden; */
 }
-header,footer{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Nerko One', cursive;
-    overflow: hidden;
-    background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    
-
+header,
+footer,section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Nerko One", cursive;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to bottom,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
 }
 
-header h1{
-    font-size: 5rem;
+header h1 {
+  font-size: 5rem;
 }
 
-.b{
-
-    position: absolute;
+.scroll {
+  color: #cb597d;
+  padding-top: 100px;
+  font-size: 1.4rem;
+  padding-bottom: 20px;
 }
-.bear{
+.arrow {
+  width: 30px;
+  margin-right: 40px;
+  left: 50%;
+  transform: translateX(50%);
+  animation: arrow infinite ease-in linear;
+}
 
-    left: 100px;
-    bottom: -200px;
-    width: 400px;
+@keyframes arrow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+
+.b {
+  position: absolute;
+}
+.bear {
+  left: 100px;
+  bottom: -200px;
+  width: 400px;
+  cursor: pointer;
+  /* z-index: 3; */
+  transition: transform 0.2s linear;
+}
+
+header:hover img {
+    transform: scale(1.2);
     cursor: pointer;
     /* z-index: 3; */
+  }
 
+h1:hover {
+  transform: scale(1.2);
+  padding: 20px;
 }
 
-h1:hover{
+.bear2 {
+  right: 10px;
+  bottom: 0px;
+  width: 400px;
+  transform: rotate(270deg);
+}
 
-  transform: scale(2);
+.bear3 {
+  left: 10px;
+  bottom: 0px;
+  width: 400px;
+}
 
-padding: 20px;
+footer h2 {
+  font-size: 5rem;
+}
 
+.animation {
+  height: 100vh;
+  background-image: linear-gradient(
+    to left top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.parrafo {
+  padding: 2rem;
+  max-width: 500px;
+  font-size: 3rem;
 }
 
 
-.bear2{
 
-    right: 10px;
-    bottom: 0px;
+footer {
+  position: relative;
+}
+
+@media (max-width:560px){
+    header,
+footer,section {
     width: 400px;
-    transform: rotate(270deg);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Nerko One", cursive;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to bottom,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
 }
 
-.bear3{
+header h1 {
+    font-size: 2rem;
+  }
+  
+  .scroll {
+    color: #cb597d;
+    padding-top: 100px;
+    font-size: 1rem;
+    padding-bottom: 20px;
+  }
+  .arrow {
+    width: 30px;
+ 
+  }
+.b{
+    width: 50px;
+}
+  .bear {
+    left: 10px;
+    bottom: 10px;
+    width: 150px;
+ 
+  }
+  
 
+  
+  h1:hover {
+    transform: scale(1.2);
+    padding: 20px;
+  }
+  
+  .bear2 {
+    right: 0;
+    bottom: 100px;
+    width: 200px;
+    transform: rotate(270deg);
+  }
+  
+  .bear3 {
     left: 10px;
     bottom: 0px;
-    width: 400px;
+    width: 200px;
+  }
 
-}
+  .parrafo p{
+    padding: 1rem;
+    max-width: 400px;
+    font-size: 3rem;
+  }
 
-footer h2{
-    font-size: 5rem;
-
-}
-
-.animation{
-    height: 100vh;
-    background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    position: relative;
-    overflow: hidden;
-}
-
-.p{
-    height: 150px;
-    position: absolute;
-   
-}
-
-.paper{
-    top: 20%;
-    left: 0;
-}
-.paper2{
-    top: 20%;
-    right: 0;
-    transform: rotate(180deg);
-}
-
-footer{
-position: relative;
+  footer h2 {
+    font-size: 2rem;
+  }
+  
 }

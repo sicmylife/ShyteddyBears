@@ -1,49 +1,90 @@
 // gsap.registerPlugin(ScrollTrigger);
+let tl = gsap.timeline({
+  scrollTrigger: {},
+});
 
-gsap.to(".bear", {
-    scrollTrigger:{
-        trigger:".h1",
-        markers:true,
-        start:'-400px',
-        end: "500px", 
-     scrub:3
-       
-
-} ,
-//   x: 300,
-//   rotate:760,
-  y:400,
+tl.to(".bear", {
+  scrollTrigger: {
+    trigger: ".h1",
+    start: "-250px",
+    end: "200px",
+    scrub: 2,
+    markers: true,
+  },
+  y: 300,
   duration: 3,
-  ease:'none'
+  scale:.5,
 });
 
 gsap.to(".bear2", {
-    scrollTrigger:{
-        trigger:".animation",
-        scrub:3,
-        markers:true,
-        start:'-200px',
-        end:'+=300',
-
-
-} ,
+  scrollTrigger: {
+    trigger: ".animation",
+    scrub: 2,
+    start: "-300px",
+    end: "+=300",
+  },
   x: 500,
   duration: 2,
-  ease:'none'
-
+  ease: "none",
 });
 
-
 gsap.to(".bear3", {
-    scrollTrigger:{
-        trigger:"footer",
-        scrub:3,
-        markers:true,
-        start:'-200px',
-        end:'+=300',
-
-
-} ,
+  scrollTrigger: {
+    trigger: "footer",
+    scrub: 2,
+    start: "-200px",
+    end: "+=300",
+  },
   x: -500,
   duration: 2,
 });
+
+gsap.to('.scroll', {
+  scrollTrigger: {
+    trigger: "header",
+    scrub: 3,
+    start: "top",
+    end: "+=500",
+  },
+  y: 100,
+  duration: 2,
+});
+
+gsap.to(".arrow", {
+    scrollTrigger: {
+      trigger: "header",
+      scrub: 2,
+      start: "top",
+      end: "+=500",
+    },
+    y: 100,
+    duration: 2,
+  });
+
+
+  gsap.to(".parrafo", {
+    scrollTrigger: {
+      trigger: ".animation",
+      scrub: 2,
+      start: "top",
+      end: "+=500",
+    },
+    y: 200,
+    scale: 2,
+    duration: 2,
+  });
+
+  tl.fromTo(".h2", {
+    scrollTrigger: {
+      trigger: ".animation",
+      scrub: 2,
+      start: "top",
+      end: "+=500",
+    },
+    y: 50,
+    scale: 2,
+    duration: 2,
+    opacity:1,
+  });
+  
+  
