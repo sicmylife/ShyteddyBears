@@ -101,7 +101,7 @@ gsap.to(".arrow", {
     //   toggleActions:'restart none none none',
       pin:'.h1',
       pinSpacing:true,
-      markers:true,
+    //   markers:true,
     },   duration: 7,
   
   
