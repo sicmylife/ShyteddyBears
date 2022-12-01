@@ -135,6 +135,26 @@ footer {
   position: relative;
 }
 
+
+.square{
+
+    height: 100px;
+
+    width: 100px;
+
+    background-color: pink;
+}
+
+.square2{
+
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+.animation2{
+    display: block;
+}
+
 @media (max-width:560px){
     header,
 footer,section {

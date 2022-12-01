@@ -1,4 +1,6 @@
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
+
+
 let tl = gsap.timeline({
   scrollTrigger: {},
 });
@@ -9,7 +11,7 @@ tl.to(".bear", {
     start: "-250px",
     end: "200px",
     scrub: 2,
-    markers: true,
+    // markers: true,
   },
   y: 300,
   duration: 3,
@@ -74,7 +76,7 @@ gsap.to(".arrow", {
     duration: 2,
   });
 
-  tl.fromTo(".h2", {
+  tl.to(".h2", {
     scrollTrigger: {
       trigger: ".animation",
       scrub: 2,
@@ -87,4 +89,20 @@ gsap.to(".arrow", {
     opacity:1,
   });
   
+
+
+  gsap.to(".h1", {
+    scrollTrigger: {
+     
+      trigger: ".animation",
+      scrub: 2,
+      start: "top 100%",
+      end: "top 10%",
+    //   toggleActions:'restart none none none',
+      pin:'.h1',
+      pinSpacing:true,
+      markers:true,
+    },   duration: 7,
   
+  
+ });
